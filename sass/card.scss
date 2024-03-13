@@ -1,0 +1,83 @@
+.card{
+    width: 375px;
+    overflow: hidden;
+ }
+ .wrapper{
+    background-color: $DarkGrey;
+    padding: 25px;
+    //margin: 2em;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__avatar{
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
+&__name{
+    color: $White;
+    font-weight: 400;
+    margin-top: 1em;
+}
+&__country{
+    color:$Yellow;
+    font-weight: 600;
+    opacity: .9;
+    margin-top: 1em;
+}
+&__service{
+    margin-top: 2em;
+    font-weight: 400;
+    color: $White;
+    opacity: .6;
+}
+}
+.links{
+    margin-top: 1.5em;
+    display: grid;
+    gap: 1em;
+    list-style: none;
+&__link{
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: $White;
+    background-color: $Grey;
+    width: 100%;
+    padding: 1em 0;
+    text-align: center;
+    border-radius: .5em;
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    -ms-border-radius: .5em;
+    -o-border-radius: .5em;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+&__link:hover{
+    color: $DarkGrey;
+    background-color: $Yellow;
+    transition:  all 500ms;
+    -webkit-transition:  all 500ms;
+    -moz-transition:  all 500ms;
+    -ms-transition:  all 500ms;
+    -o-transition:  all 500ms;
+}
+}
+
+@media (max-width:375px){
+    .wrapper{
+        margin: 2em;
+    }
+}
